@@ -1,0 +1,77 @@
+:host {
+  display: block;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 29px;
+}
+
+.welcome h1 {
+  margin: 0 0 9px;
+  font-size: clamp(24px, 2.4vw, 32px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.welcome p {
+  margin: 0;
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.session-status {
+  flex-shrink: 0;
+  padding: 9px 15px;
+  border-radius: 22px;
+  background: #171717;
+  color: #999999;
+  font-size: 11px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.8fr);
+  align-items: stretch;
+  gap: 23px;
+}
+
+.login-column {
+  min-width: 0;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .login-column {
+    order: 2;
+  }
+
+  .content-column {
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .welcome h1 {
+    font-size: 26px;
+  }
+}

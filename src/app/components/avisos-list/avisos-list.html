@@ -1,0 +1,14 @@
+<section class="panel">
+  <h3>📣 Avisos principales</h3>
+
+  @for (aviso of avisos; track aviso.titulo) {
+    <div class="notice">
+      <div class="notice-content">
+        <strong>{{ aviso.titulo }}</strong>
+        <span>{{ aviso.detalle }}</span>
+      </div>
+
+      <span class="notice-tag">{{ aviso.etiqueta }}</span>
+    </div>
+  }
+</section>

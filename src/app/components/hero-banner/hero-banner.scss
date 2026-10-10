@@ -1,0 +1,51 @@
+:host {
+  display: block;
+}
+
+.hero {
+  min-height: 188px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  overflow: hidden;
+  border-radius: 13px;
+  border: 1px solid #252525;
+  background:
+    linear-gradient(90deg, #151515 0%, rgba(15, 15, 15, 0.95) 36%, rgba(10, 10, 10, 0.35) 100%),
+    url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80')
+      center 52% / cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  margin: 0 0 13px;
+  color: #f0c943;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.hero h2 {
+  margin: 0 0 12px;
+  font-size: clamp(23px, 2.1vw, 30px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.subtitle {
+  margin: 0;
+  color: #aaaaaa;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 500px) {
+  .hero {
+    padding: 20px;
+    min-height: 210px;
+  }
+}

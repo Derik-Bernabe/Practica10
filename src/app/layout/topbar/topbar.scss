@@ -1,0 +1,104 @@
+:host {
+  display: block;
+}
+
+.topbar {
+  min-height: 86px;
+  padding: 0 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: #050505;
+  border-bottom: 1px solid #222222;
+}
+
+.topbar h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  height: 38px;
+  width: 185px;
+  background: #1b1b1b;
+  border-radius: 9px;
+  color: #999999;
+}
+
+.search-box input {
+  min-width: 0;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 12px;
+}
+
+.notification {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: #dddddd;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  background: #f0c943;
+  border-radius: 50%;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+  border-left: 1px solid #292929;
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #494949;
+  color: white;
+}
+
+@media (max-width: 650px) {
+  .topbar {
+    padding: 16px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .topbar-actions {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .search-box {
+    width: 140px;
+  }
+}

@@ -1,0 +1,20 @@
+<section class="panel">
+  <div class="panel-heading">
+    <h3>Rutinas para empezar</h3>
+    <span>Ejemplos del catálogo</span>
+  </div>
+
+  @for (rutina of rutinas; track rutina.nombre) {
+    <div class="routine">
+      <div class="routine-icon">{{ rutina.icon }}</div>
+
+      <div class="routine-info">
+        <strong>{{ rutina.nombre }}</strong>
+        <span>{{ rutina.detalle }}</span>
+      </div>
+
+      <span class="duration">◷ {{ rutina.duracion }}</span>
+      <span class="arrow">›</span>
+    </div>
+  }
+</section>

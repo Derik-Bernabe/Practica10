@@ -1,0 +1,89 @@
+:host {
+  display: block;
+  min-width: 220px;
+}
+
+.sidebar {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 28px 19px;
+  background: #111111;
+  border-right: 1px solid #292929;
+  color: #eeeeee;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 47px;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
+  background: #f0c943;
+  color: #171717;
+  font-size: 22px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.brand-text strong {
+  font-size: 15px;
+}
+
+.brand-text span {
+  color: #999999;
+  font-size: 10px;
+}
+
+.menu-label {
+  margin-bottom: 20px;
+  color: #777777;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 48px;
+  padding: 0 14px;
+  border-radius: 9px;
+  color: #a9a9a9;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu-item.active {
+  background: #242011;
+  color: #f0c943;
+  border-left: 3px solid #f0c943;
+}
+
+.menu-icon {
+  width: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media (max-width: 650px) {
+  :host {
+    min-width: 0;
+  }
+}

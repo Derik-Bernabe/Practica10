@@ -1,0 +1,54 @@
+:host {
+  display: block;
+}
+
+.panel {
+  padding: 23px;
+  background: #121212;
+  border: 1px solid #292929;
+  border-radius: 13px;
+}
+
+.panel h3 {
+  margin: 0 0 17px;
+  font-size: 17px;
+}
+
+.notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.notice-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.notice-content strong {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.notice-content span {
+  color: #929292;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.notice-tag {
+  color: #f0c943;
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 500px) {
+  .panel {
+    padding: 16px;
+  }
+}

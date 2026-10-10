@@ -1,0 +1,43 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #050505;
+  color: #eeeeee;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.main-area {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  padding: 38px;
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    grid-template-columns: 180px minmax(0, 1fr);
+  }
+
+  .page-content {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .page-content {
+    padding: 20px 15px;
+  }
+}
